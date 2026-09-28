@@ -1,4 +1,4 @@
-# 🧮 OmniMath AI (ओम्नीमैथ एआई)
+# 🧮 OmniMath AI
 ### *Next-Generation Scientific Calculator, Multimodal Handwritten Math Canvas & Pedagogical STEM Solver*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -57,7 +57,7 @@ Whether for elementary learners mastering numeral formation, high school student
   - **Formula Reference**: Applicable theorems and standard formulas.
   - **Step Decomposition**: Each transformation explicitly annotated with the mathematical rule applied (BODMAS / PEMDAS, Zero Exponent Law, Variable Isolation, Principal Square Root).
   - **Verification & Alternate Forms**: Fractions, decimal approximations, and scientific notations.
-  - **Multilingual Normalization**: Transparently handles Devanagari numerals (`०-९`), Eastern Arabic numerals (`٠-٩`), and multilingual math prompt phrasing.
+  - **Symbolic & Script Normalization**: Transparently standardizes diverse numeral styles, arithmetic notations, and mathematical prompt phrasing into canonical expressions.
 
 ### 4. 🎙️ Natural Voice Input (`speechRecognition.ts`)
 - Leverages the browser Web Speech API for seamless voice-to-math translation.
