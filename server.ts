@@ -68,10 +68,10 @@ async function generateWithRetryAndFallback(
     timeoutMs?: number;
   }
 ) {
-  // Use verified operational models: gemini-3.6-flash as primary, gemini-3.5-flash and gemini-3.5-flash-lite as fallbacks
+  // Use verified operational models: gemini-3.8-flash as primary
   const candidateModels = [
-    params.primaryModel || "gemini-3.6-flash",
-    ...(params.fallbackModels || ["gemini-3.5-flash", "gemini-3.5-flash-lite"]),
+    params.primaryModel || "gemini-3.8-flash",
+    ...(params.fallbackModels || ["gemini-3-flash", "gemini-flash"]),
   ];
 
   const uniqueModels = Array.from(new Set(candidateModels));
@@ -220,8 +220,8 @@ Output strictly a valid JSON object without surrounding formatting:
 }`;
 
     const response = await generateWithRetryAndFallback(ai, {
-      primaryModel: "gemini-3.6-flash",
-      fallbackModels: ["gemini-3.5-flash", "gemini-3.5-flash-lite"],
+      primaryModel: "gemini-3.8-flash",
+      fallbackModels: ["gemini-3-flash", "gemini-flash"],
       contents: prompt,
       timeoutMs: 6000,
       config: {
@@ -463,8 +463,8 @@ Output strictly a valid JSON object without surrounding markdown:
     };
 
     const response = await generateWithRetryAndFallback(ai, {
-      primaryModel: "gemini-3.6-flash",
-      fallbackModels: ["gemini-3.5-flash", "gemini-3.5-flash-lite"],
+      primaryModel: "gemini-3.8-flash",
+      fallbackModels: ["gemini-3-flash", "gemini-flash"],
       contents: [imagePart, textPart],
       timeoutMs: 9000,
       config: {
@@ -683,8 +683,8 @@ Output strictly a valid JSON object without surrounding formatting:
 }`;
 
     const response = await generateWithRetryAndFallback(ai, {
-      primaryModel: "gemini-3.6-flash",
-      fallbackModels: ["gemini-3.5-flash", "gemini-3.5-flash-lite"],
+      primaryModel: "gemini-3.8-flash",
+      fallbackModels: ["gemini-3-flash", "gemini-flash"],
       contents: prompt,
       timeoutMs: 5000,
       config: {
