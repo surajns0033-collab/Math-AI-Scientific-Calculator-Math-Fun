@@ -1,0 +1,10 @@
+{
+  "name": "OmniMath AI Scientific Calculator & Math Canvas",
+  "description": "Scientific calculator, physics equations, unit conversions, voice input, AI step-by-step solver, kids number writing practice, and interactive number arrangement games.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
